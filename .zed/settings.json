@@ -1,0 +1,29 @@
+{
+  "languages": {
+    "Assembly": {
+      "indent_guides": {
+        "background_coloring": "indent_aware"
+      },
+      "allow_rewrap": "anywhere"
+    }
+  },
+  "close_on_file_delete": true,
+  "search": {
+    "include_ignored": true
+  },
+  "file_finder": {
+    "include_ignored": "all"
+  },
+  "terminal": {
+    "scrollbar": {
+      "show": "always"
+    },
+    "toolbar": {
+      "breadcrumbs": true
+    },
+    "cursor_shape": "bar",
+    "font_family": "BigBlueTermPlus Nerd Font"
+  },
+  "enable_language_server": true,
+  "cursor_shape": "bar"
+}

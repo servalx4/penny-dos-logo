@@ -1,0 +1,28 @@
+# .asm-lsp.toml
+# Configuration file for asm-lsp (Assembly Language Server)
+
+disable = true
+
+[server]
+# The assembler dialect: nasm, masm, gas, fasm
+dialect = "nasm"
+
+# The architecture: x86, x86_64, arm, aarch64, riscv
+arch = "x86"
+
+include_dirs = [
+  "include/",
+  "/usr/include/",
+]
+
+# Enable diagnostics (syntax errors, warnings, etc.)
+diagnostics = false
+
+# Case-insensitive labels and symbols (set true if your assembler supports it)
+case_insensitive = false
+
+# Automatically detect includes and dependencies
+auto_discover_includes = true
+
+[logging]
+level = "info"
