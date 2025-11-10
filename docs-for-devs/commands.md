@@ -6,4 +6,5 @@
     make clean
     ls
     cd /path/to/destination
+    nasm -f bin boot.asm -o boot.bin
 ```
