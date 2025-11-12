@@ -4,6 +4,10 @@ The FOSS DOS.
 
 ---
 
+![GitHub Release](https://img.shields.io/github/v/release/penne-not-pasta/penny-dos?include_prereleases&sort=semver&display_name=release&style=flat-square&logo=github&logoColor=%23fff&logoSize=auto&label=Version%20no.&labelColor=%23181717&color=%23EA4AAA&link=https%3A%2F%2Fgithub.com%2Fpenne-not-pasta%2Fpenny-dos%2Freleases%2Ftag%2Fv0.0.1-alpha)
+
+---
+
 ## What is Penny-DOS?
 
 Penny-DOS is a 16-bit assembly made MS-DOS clone. It is made to be ran in a VM and is purely just for fun, nostalgia, and learning. The name Penny-DOS came from the creator of the project "Penelope" (penny for short).
@@ -23,5 +27,3 @@ The official v1.0 release is currently unknown as of Friday, November 7th, 2025.
 <!-- readme: contributors -end -->
 
 ---
-
-> Updated on 12/11/2025 (11/12/2025 for americans.)
