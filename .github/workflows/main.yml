@@ -1,17 +1,20 @@
+name: CI
 on:
     push:
         branches:
-            - main
+            - master
+    pull_request:
+        branches:
+            - master
 
 jobs:
     contrib-readme-job:
         runs-on: ubuntu-latest
-        name: A job to automate contributors in the readme
-        permissions:
-          contents: write
-          pull-requests: write
+        name: A job to automate contribute list in readme.md
         steps:
             - name: Contribute List
-              uses: akhilmhdh/contributors-readme-action@v2.3.11
+              uses: akhilmhdh/contributors-readme-action@master
+              with:
+                  readme_path: "contributors.md"
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
