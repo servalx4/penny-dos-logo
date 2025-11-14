@@ -4,13 +4,15 @@ repo_url: https://github.com/penne-not-pasta/penny-dos
 nav:
   - Home: index.md
   - Getting Started:
-      - Overview: getting-started/overview.md
-      - Installation: getting-started/installation.md
-      - Quick Run: getting-started/quick-run.md
-  - Documentation:
-      - Architecture: docs/architecture.md
-      - Assembly Code: docs/assembly-code.md
-      - Building: docs/building.md
+      - Overview: getting_started/overview.md
+      - Usage: getting_started/usage.md
+      - Installation: getting_started/installation.md
+  - Contributing Docs:
+      - Required: contrib/requirements.md
+      - Building: contrib/building.md
+      - Testing: contrib/testing.md
+      - Code Of Conduct: contrib/CODE_OF_CONDUCT.md
+      - Contributing: contrib/contributing.md
 theme:
   name: material
   palette:
