@@ -7,6 +7,7 @@ The FOSS DOS.
 ![GitHub Release](https://img.shields.io/github/v/release/penne-not-pasta/penny-dos?include_prereleases&sort=semver&display_name=release&style=flat-square&logo=github&logoColor=%23fff&logoSize=auto&label=Version%20no.&labelColor=%23181717&color=%23EA4AAA&link=https%3A%2F%2Fgithub.com%2Fpenne-not-pasta%2Fpenny-dos%2Freleases%2Ftag%2Fv0.0.1-alpha)
 ![Discord](https://img.shields.io/discord/1421944713258471514?style=flat-square&logo=discord&logoColor=%23fff&label=Discord&labelColor=%23181717&color=%235865F2)
 ![GitHub last commit](https://img.shields.io/github/last-commit/penne-not-pasta/penny-dos?style=flat-square&logo=github&logoColor=%23fff&labelColor=%23181717&color=%23EA4AAA)
+![Read the Docs](https://img.shields.io/readthedocs/Penny-DOS?style=flat-square&logo=readthedocs&logoColor=%23fff&color=%238CA1AF)
 
 
 ---
