@@ -1,45 +1,44 @@
+%INCLUDE "src/HEADER_FILES/multiboot_header.asm"
 %INCLUDE "src/hardware/memory.asm"
+
 [BITS 16]
 [ORG KERNELOFFSET]
 
-jmp Main
+jmp Main        ; jump over multiboot header / reserved space
 
 %INCLUDE "src/hardware/disk.asm"
 %INCLUDE "src/hardware/display.asm"
 %INCLUDE "src/hardware/system.asm"
 %INCLUDE "src/hardware/keyboard.asm"
 %INCLUDE "src/libs/io.asm"
-%INCLUDE "src/shell.asm" 
 
 Main:
-    call Segmen
     call Stack
     call CleanScreen
-    mov byte[color], 87h
+    mov byte [color], 87h
     call SetBackGroundColor
-    mov si, hwmsg
     call Println
-    
+
     ; enter the shell
     call Shell
-    
-    ; If Shell ever returns, reboot
+
     call Reboot
     call End
 
 
+; Stack setup (16-bit real mode)
 Stack:
-    mov ax, 0x0200b
+    cli                 ; disable interrupts
+    mov ax, 0x7000      ; example stack segment
     mov ss, ax
-    mov sp, 0x0300b
-ret
-
-Segmen:
-    mov ax, es
-    mov ds, ax
-ret
-
+    mov sp, 0xFFFF
+    sti                 ; enable interrupts
+    ret
+    
+; End routine (placeholder)
 End:
-    jmp $
+    hlt                 ; halt CPU
+    jmp End             ; infinite loop
+        
 
-hwmsg db "Erm What The Skibidi...",13,10,"Press ENTER to restart",13,10,0
+%INCLUDE "src/shell.asm"
