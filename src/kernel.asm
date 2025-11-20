@@ -9,21 +9,24 @@ jmp Main
 %INCLUDE "src/hardware/system.asm"
 %INCLUDE "src/hardware/keyboard.asm"
 %INCLUDE "src/libs/io.asm"
+%INCLUDE "src/shell.asm" 
 
 Main:
     call Segmen
     call Stack
     call CleanScreen
-
     mov byte[color], 87h
     call SetBackGroundColor
     mov si, hwmsg
     call Println
-    mov byte[key], 0x0d
-    call PressKey
+    
+    ; enter the shell
+    call Shell
+    
+    ; If Shell ever returns, reboot
     call Reboot
-
     call End
+
 
 Stack:
     mov ax, 0x0200b
