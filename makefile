@@ -1,5 +1,4 @@
-# Penny-DOS Makefile
-# Penny-DOS Makefile
+ n # Penny-DOS Makefile
 ASM      = nasm
 ASMFLAGS = -f bin
 BUILD    = build

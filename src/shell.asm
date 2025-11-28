@@ -242,7 +242,7 @@ ShellPutChar:
 ShellStrCmp:
     push bp
     mov bp, sp
-    push si
+    ; push si
     push dx
 _cmp_loop:
     mov al, [si]
